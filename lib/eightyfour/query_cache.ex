@@ -5,8 +5,8 @@ defmodule Eightyfour.QueryCache do
   use GenServer
   import Eightyfour.Utils, only: [seconds_since_epoch: 0]
 
-  # 12 hours between fetching.
-  @ttl 60 * 60 * 12
+  # One minute between fetching.
+  @ttl 60
 
   def start_link do
     GenServer.start_link(__MODULE__, :ok, name: __MODULE__)
