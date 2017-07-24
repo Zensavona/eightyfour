@@ -27,7 +27,7 @@ end
   defp deps do
     [{:poison, "~> 1.5 or ~> 2.0 or ~> 3.0"},
      {:httpoison, "~> 0.8"},
-     {:json_web_token, "~> 0.2"},
+     {:json_web_token, "~> 0.2.10"},
      {:timex, "~> 3.0"},
      {:credo, "~> 0.8", only: [:dev, :test], runtime: false},
      {:ex_doc, ">= 0.0.0", only: :dev}]
